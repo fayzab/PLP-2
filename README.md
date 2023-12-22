@@ -61,7 +61,12 @@ C++ identifier names and operator symbols are bound during the following times:
 -Compilation and runtime 
 
 
-Simply typing x = “5” + 6 in a C++ program in hopes of the compiler to output 11 is not going to work. The compiler will spit out a bunch of error messages about the lack of data type declarations, the missing #include <iostream> which is needed in every C++ program for inputs and outputs, and the lack of a semicolon at the end of the line of code. In order for this code compile, follow the syntax below; **We declare the variables, convert the string to an integer, then add the total**
+Simply typing x = “5” + 6 in a C++ program in hopes of the compiler to output 11 is not going to work. The compiler will spit out a bunch of error messages about the lack of data type declarations, the missing #include <iostream> which is needed in every C++ program for inputs and outputs, and the lack of a semicolon at the end of the line of code. 
+
+
+In order for this code compile, follow the syntax below:
+
+We declare the variables, convert the string to an integer, then add the total
 
 *************
 
