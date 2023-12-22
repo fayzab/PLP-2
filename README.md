@@ -6,10 +6,13 @@ C++ has 95 keywords which have unique meanings defined by the compiler
 The following are the naming requirements for variables:
 
 -Variable names may not be the same as C++ keywords (‘int’, ‘for’, ‘bool’, etc.)
+
 -Case sensitivity (‘var1’ and ‘Var1’ are considered as two different variables)
+
 -Underscores, letters, or digits, but cannot start with a digit
 
 Naming conventions are standard practice and are not enforced by the compiler. A very commonly followed naming convention is camel case where the variable starts with lowercase letter for the first term and uppercase letter for the second term. 
+
 -ex. myDog, myCat
 
 
@@ -24,26 +27,37 @@ In C++, all variables are mutable by default. However, by using the “const” 
 
 The operators in C++ include:
 -Arithmetic operators: (‘+’ , ‘-’ , ‘*’ , ‘/’ , ‘%’- Modulus )
+
 -Logical operators - Booleans:  (‘&&’ - AND , ‘||’ - OR , ‘!’ - NOT)
+
 -Relational operators:  (‘<’ , ‘>’ , ‘==’ - equal to , ‘<=’ - less than or equal to, ‘>= - greater than or equal to’ , ‘!=’ - not equal to)
+
 -Bitwise operators - Integers: (‘&’ - AND , ‘|’ - OR , ‘~’ - NOT , ‘^’ - XOR , ‘<<’ - left shift , ‘>>’ - right shift)
+
 -Ternary/conditional operators: ‘?’ returns the value based on the condition
+
 -Assignment operators: (‘=’ - Assignment , ‘+=’ , ‘-=’ , ‘*=’ , ‘/=’ , ‘%=’ - Compound Assignment)
+
 -Pointers: (string *ptr) stores the memory address as its value
 
 
 In C++ mixed type operations are allowed in which type coercion comes into play. Type coercion is when C++ implicitly converts values from one data type to another. Some examples are listed below:
 
 -bool -> char -> short int -> int -> 
+
 -unsigned int -> long -> unsigned -> 
+
 -long long -> float -> double -> long double
 
 
 C++ identifier names and operator symbols are bound during the following times:
 
 -Variables, Class name, Function name 
+
 -Declaration and definition
+
 -Operator symbols (‘+’, ‘-’, ‘==’, )
+
 -Compilation and runtime 
 
 
@@ -54,9 +68,13 @@ Simply typing x = “5” + 6 in a C++ program in hopes of the compiler to outpu
 #include <iostream>
 
 int main() {
+
 std::string x = "5";
+
 int y = 6;
+
 int total = std::stoi(x) + y; //stoi converts strings to integers
+
 std::cout << "Total = " << total << std::endl;
 
 
@@ -69,6 +87,7 @@ return 0;
 C++ is a great programming language and is flexible when dealing with ints and floats, storing different types in lists, and converting between data types. The only limitation of data types is floats. Floats only have a precision up to 7 digits, and cannot exceed this limit. Integers and floats are the most commonly used data types in C++.
 
 -std::variant - to store multiple types in a list
+
 -std::stoii - string conversions
 
 
