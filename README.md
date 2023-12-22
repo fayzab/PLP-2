@@ -1,6 +1,6 @@
 # PLP-2 Data Types and Naming Conventions
 
-C++ has 95 keywords which have unique meanings defined by the compiler
+  C++ has 95 keywords which have unique meanings defined by the compiler
 
 
 The following are the naming requirements for variables:
