@@ -13,7 +13,7 @@ The following are the naming requirements for variables:
 
 Naming conventions are standard practice and are not enforced by the compiler. A very commonly followed naming convention is camel case where the variable starts with lowercase letter for the first term and uppercase letter for the second term. 
 
--ex. myDog, myCat
+    myDog, myCat
 
 
 C++ is a statically typed language. Variable types are determined at compile time, this means variables must be declared by the specific data type when being defined. These errors will be caught by the compiler which ensures type safety and better execution in programs. A variable that has been declared earlier in the program may not be assigned to another value later on. 
@@ -26,28 +26,43 @@ In C++, all variables are mutable by default. However, by using the “const” 
 
 
 The operators in C++ include:
--Arithmetic operators: (‘+’ , ‘-’ , ‘*’ , ‘/’ , ‘%’- Modulus )
 
--Logical operators - Booleans:  (‘&&’ - AND , ‘||’ - OR , ‘!’ - NOT)
+Arithmetic Operators: 
 
--Relational operators:  (‘<’ , ‘>’ , ‘==’ - equal to , ‘<=’ - less than or equal to, ‘>= - greater than or equal to’ , ‘!=’ - not equal to)
+    //(‘+’ , ‘-’ , ‘*’ , ‘/’ , ‘%’- Modulus )
 
--Bitwise operators - Integers: (‘&’ - AND , ‘|’ - OR , ‘~’ - NOT , ‘^’ - XOR , ‘<<’ - left shift , ‘>>’ - right shift)
+Logical Operators - Booleans:  
 
--Ternary/conditional operators: ‘?’ returns the value based on the condition
+    //(‘&&’ - AND , ‘||’ - OR , ‘!’ - NOT)
 
--Assignment operators: (‘=’ - Assignment , ‘+=’ , ‘-=’ , ‘*=’ , ‘/=’ , ‘%=’ - Compound Assignment)
+Relational Operators:
 
--Pointers: (string *ptr) stores the memory address as its value
+    //(‘<’ , ‘>’ , ‘==’ - equal to , ‘<=’ - less than or equal to, ‘>= - greater than or equal to’ , ‘!=’ - not equal to)
+
+Bitwise Operators - Integers: 
+
+    //(‘&’ - AND , ‘|’ - OR , ‘~’ - NOT , ‘^’ - XOR , ‘<<’ - left shift , ‘>>’ - right shift)
+
+Ternary/Conditional Operators: 
+
+    //‘?’ returns the value based on the condition
+
+Assignment Operators: 
+
+    //(‘=’ - Assignment , ‘+=’ , ‘-=’ , ‘*=’ , ‘/=’ , ‘%=’ - Compound Assignment)
+
+Pointers: 
+
+    //string *p stores the memory address as its value
 
 
 In C++ mixed type operations are allowed in which type coercion comes into play. Type coercion is when C++ implicitly converts values from one data type to another. Some examples are listed below:
 
--bool -> char -> short int -> int -> 
+    //bool -> char -> short int -> int -> 
 
--unsigned int -> long -> unsigned -> 
+    //unsigned int -> long -> unsigned -> 
 
--long long -> float -> double -> long double
+    //long long -> float -> double -> long double
 
 
 C++ identifier names and operator symbols are bound during the following times:
@@ -68,32 +83,30 @@ In order for this code compile, follow the syntax below:
 
 We declare the variables, convert the string to an integer, then add the total
 
-*************
+    #include <iostream>
 
-#include <iostream>
+    int main() {
 
-int main() {
+    std::string x = "5";
 
-std::string x = "5";
+    int y = 6;
 
-int y = 6;
+    int total = std::stoi(x) + y; //stoi converts strings to integers
 
-int total = std::stoi(x) + y; //stoi converts strings to integers
-
-std::cout << "Total = " << total << std::endl;
+    std::cout << "Total = " << total << std::endl;
 
 
-return 0;
-}
+    return 0;
+    }
 
-*************
+
 
 
 C++ is a great programming language and is flexible when dealing with ints and floats, storing different types in lists, and converting between data types. The only limitation of data types is floats. Floats only have a precision up to 7 digits, and cannot exceed this limit. Integers and floats are the most commonly used data types in C++.
 
--std::variant - to store multiple types in a list
+    //std::variant - to store multiple types in a list
 
--std::stoii - string conversions
+    //std::stoii - string conversions
 
 
 Sources:
